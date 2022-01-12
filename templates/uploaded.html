@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+{% block main %}
+<div class="container">
+    <h2>You are {{pred}}!</h2>
+    <div class="emoji-container">
+    {% if pred=="happy" %}
+        <div class="emoji">&#128516;</div>
+    {% endif %}
+    {% if pred=="neutral" %}
+        <div class="emoji">&#128529;</div>
+    {% endif %}
+    {% if pred=="sad" %}
+        <div class="emoji">&#128532;</div>
+    {% endif %}
+    </div>
+    <div class="input-file-container">
+        <form method="get" enctype="multipart/form-data">
+            <input type="submit" id="goback" class="submit" value="Submit Another Photo">
+        </form>
+    </div>
+</div>
+{% endblock %}

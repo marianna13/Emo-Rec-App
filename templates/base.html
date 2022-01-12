@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Emo Rec</title>
+</head>
+<body>
+    <div class="app-container">
+        <header class="site-header">
+            <div class="site-identity">
+        <h1>Emo Rec</h1>
+  </div>  
+  <nav class="site-navigation">
+    <a href="https:///www.github.com" target="_blank"><img src="https://www.space4water.org/s4w/web/sites/default/files/images/software/logos/2020-07/Ei-sc-github.svg_.png" alt="Github Logo" class="logo"></a>
+  </nav>
+</header>
+    {% block main %}
+    {% endblock %}
+    </div>
+</body>
+</html>

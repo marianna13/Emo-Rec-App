@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="container">
+    <div class="emoji-container">
+        <div class="emoji">&#128516;</div>
+        <div class="emoji">&#128529;</div>
+        <div class="emoji">&#128532;</div>
+    </div>
+    <h3>Emo Rec is a neural network which can tell whether you are happy, neutral or sad based on your photo!</h3>
+    <h2 class="upload">Upload your image</h2>
+    <h2 class="upload">&#8595;</h2>
+    <form method="post" enctype="multipart/form-data">
+        <div class="input-file-container">  
+            <label for="formFile" class="input-file-trigger">Choose *.png, *.jpg or *.jpeg files</label>
+            <input class="input-file" type="file" id="formFile" name="file1" accept="image/*">
+        </div>
+        <p class="file-return"></p>
+        <input type="submit" class="submit">
+      </form>
+</div>
+<script>
+    var fileInput  = document.querySelector( ".input-file" ),  
+    button = document.querySelector( ".input-file-trigger" ),
+    the_return = document.querySelector(".file-return");
+    button.addEventListener( "keydown", function( event ) {  
+        if ( event.keyCode == 13 || event.keyCode == 32 ) {  
+            fileInput.focus();  
+        }
+    });
+    button.addEventListener( "click", function( event ) {
+        fileInput.focus();
+        return false;
+    });  
+    fileInput.addEventListener( "change", function( event ) {  
+        the_return.innerHTML = this.value;  
+        });  
+</script>
+
+{% endblock %}
