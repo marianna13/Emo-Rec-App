@@ -1,4 +1,4 @@
-# Emo-Rec-App :smiley: :neutral_face: :pensive:
+# Emo Rec App :smiley: :neutral_face: :pensive:
 This is a Flask based web app that uses Convolutional Neural Network which can predict whether you are happy, neutral or sad based on your photo!
 # Tech stack
  - Flask
