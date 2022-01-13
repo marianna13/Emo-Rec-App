@@ -19,7 +19,7 @@ def extract_face(image, size=(48,48)):
 def predict(image):
     np_image = img_to_array(image)
     np_image = np.expand_dims(np_image, axis=0)
-    my_model = load_model("model\model")
+    my_model = load_model("model\model.h5")
     y_prob = my_model.predict(np_image)
     classes = np.argmax(y_prob,axis=1)
     labels = ['sad', 'happy', 'neutral']
