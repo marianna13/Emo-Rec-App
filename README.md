@@ -9,4 +9,4 @@ This is a Flask based web app that uses Convolutional Neural Network which can p
 git clone https://github.com/marianna13/Emo-Rec-App.git
 ```
 # Live Demo
-[Emo Rec](http://3.141.195.232:5000/?)
+[Emo Rec](http://3.141.195.232/)
